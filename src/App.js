@@ -2,6 +2,7 @@ import React from 'react';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
+import PasswordResetPage from './pages/password-reset-page/password-reset-page.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import './App.css';
 
@@ -49,6 +50,8 @@ function App() {
          <Route path="/" element={<HomePage />}/>
          <Route path="shop/*" element={<ShopPage />} />
          <Route path="signin/*" element={<SignInAndSignUpPage/>} />
+         <Route path="resetpassword/*" element={<PasswordResetPage/>} />
+
         </Routes>
       </BrowserRouter>
         

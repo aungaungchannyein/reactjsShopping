@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "./sign-in.styles.scss";
+import { Link } from "react-router-dom";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 // import {signInWithGoogle} from "../../firebase/firebase.utils"
@@ -70,8 +71,9 @@ function SignIn(){
             <div className="google-button">
 
             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>Sign in with google</CustomButton>
-        
+            
             </div>
+            <Link to="/resetpassword" style={{textDecoration:"underline",color:"blue"}}>Forgot Password?</Link>
             </div>
     )
 }
