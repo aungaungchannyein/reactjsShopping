@@ -1,10 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import "./sign-in.styles.scss";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 // import {signInWithGoogle} from "../../firebase/firebase.utils"
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../../firebase/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -21,7 +21,7 @@ function SignIn(){
     //   // maybe trigger a loading screen
     //   return;
     // }
-    if (user) navigate("/");
+    if(user) navigate('/')
         
 
     function handleChange(event){
