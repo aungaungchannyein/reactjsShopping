@@ -5,7 +5,7 @@ import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 // import {signInWithGoogle} from "../../firebase/firebase.utils"
 
-import { useNavigate } from "react-router-dom";
+
 import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../../firebase/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -15,14 +15,9 @@ function SignIn(){
        password:"" 
     });
 
-    const [user] = useAuthState(auth);
-    const navigate = useNavigate();
-    // useEffect(() => {
-    // if (loading) {
-    //   // maybe trigger a loading screen
-    //   return;
-    // }
-    if(user) navigate('/')
+  
+   
+    
         
 
     function handleChange(event){
@@ -43,6 +38,7 @@ function SignIn(){
             password:""
         });
         event.preventDefault();
+       
 
     }
 
