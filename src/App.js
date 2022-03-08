@@ -28,7 +28,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 function App() {
   
-  const [user,loading, error] = useAuthState(auth);
+  const [user,loading] = useAuthState(auth);
   console.log("hello"+user);
   const dispatch = useDispatch();
 
@@ -52,8 +52,9 @@ function App() {
   };
   useEffect(() => {
     if(loading) return;
+    console.log("run fetch")
     fetchUserName();
-  },[user,loading]);
+  });
    
   
     return (

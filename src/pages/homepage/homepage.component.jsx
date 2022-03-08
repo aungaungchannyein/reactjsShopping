@@ -8,18 +8,7 @@ import {useSelector} from "react-redux";
 
 function HomePage(){
 
-  // const [name,setName] = useState("");
-  // const [user] = useAuthState(auth);
-
-  
-  
-
   const user = useSelector((state)=> state.user.currentuser);
-
- 
- 
-  
-
 
   return (<div className='homepage'>
   <h1>Welcome {user}</h1>

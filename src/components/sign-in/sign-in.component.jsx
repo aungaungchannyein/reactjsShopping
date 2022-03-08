@@ -6,8 +6,8 @@ import CustomButton from "../custom-button/custom-button.component";
 // import {signInWithGoogle} from "../../firebase/firebase.utils"
 
 
-import { auth, logInWithEmailAndPassword, signInWithGoogle } from "../../firebase/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
+import {logInWithEmailAndPassword, signInWithGoogle } from "../../firebase/firebase";
+// import { useAuthState } from "react-firebase-hooks/auth";
 
 function SignIn(){
     const[contact,setContact]= useState({

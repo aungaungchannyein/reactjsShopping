@@ -11,7 +11,7 @@ function SignInAndSignUpPage(){
     const user = useSelector((state)=> state.user.currentuser);
     useEffect(() => {
         if (user) navigate('/')
-      },[user]);
+      },[user,navigate]);
     return<div className="sign-in-and-sign-up"><SignIn/><SignUp/></div>
 
     
